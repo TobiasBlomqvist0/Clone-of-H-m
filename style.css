@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    height: 250px;
+    width: 100%;
+}
+
+#dropdownactive {
+    display: none;
+    justify-content: center;
+    margin: 12px 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 6px 0 6px;
+}
+
+#container1 {
+    width: 30%;
+    margin: 20px;
+}
+
+#container2 {
+    width: 40%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#img {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 125px;
+    height: 100px;
+}
+
+#info {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container3 {
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loggin {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+#page2info {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.herrskjortor {
+    font-size: 2.4rem;
+}
+
+#page2 {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+}
+
+#sidebar {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 12px;
+}
+
+h3 {
+    margin:  4 0 8px 0;
+}
+
+#picture {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skjortor {
+    width: 350px;
+    height: 500px;
+    margin: 6px;
+    padding-top: 24px;
+}
+
+.picture {
+    width: 350px;
+    height: 520px;
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4 {
+    padding-left: 8px;
+}
+
+@media (max-width: 1080px) {
+    .kundservice, .loggin, .info {
+        font-size: 0.8rem;
+    }
+    #logo {
+        width: 75px;
+        height: 50px;
+    }
+    .herrskjortor {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #container1, #container3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #container3 {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .loggin {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .skjortor {
+        width: 250px;
+        height: 400px;
+    }
+    .sidebarinfo {
+        font-size: 0.7rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    #sidebar {
+        display: none;
+    }
+    #page2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .info {
+        margin: 4px;
+    }
+}
